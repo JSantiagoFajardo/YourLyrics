@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yourlyrics"
+version = "0.1.0"
+description = "Aplicacion de escritorio para mostrar letras sincronizadas"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "PySide6>=6.8"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-qt>=4.4",
+    "ruff>=0.9"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

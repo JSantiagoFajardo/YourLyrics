@@ -1,0 +1,29 @@
+
+# Entornos virtuales
+.venv/
+.venv-prod/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editores
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Variables y credenciales
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Metadatos de paquetes Python
+*.egg-info/
